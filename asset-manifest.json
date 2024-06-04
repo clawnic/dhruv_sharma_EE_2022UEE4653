@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/dhruv_sharma_EE_2022UEE4653/static/css/main.2027f5bc.css",
+    "main.js": "/dhruv_sharma_EE_2022UEE4653/static/js/main.225661e2.js",
+    "static/js/453.dfcbff64.chunk.js": "/dhruv_sharma_EE_2022UEE4653/static/js/453.dfcbff64.chunk.js",
+    "index.html": "/dhruv_sharma_EE_2022UEE4653/index.html",
+    "static/media/cloudie.svg": "/dhruv_sharma_EE_2022UEE4653/static/media/cloudie.d2c70f04faefa1deedaf88ab3c5c4bad.svg",
+    "static/media/moonie.svg": "/dhruv_sharma_EE_2022UEE4653/static/media/moonie.2ec3677943824b8e623220b9965a4617.svg",
+    "main.2027f5bc.css.map": "/dhruv_sharma_EE_2022UEE4653/static/css/main.2027f5bc.css.map",
+    "main.225661e2.js.map": "/dhruv_sharma_EE_2022UEE4653/static/js/main.225661e2.js.map",
+    "453.dfcbff64.chunk.js.map": "/dhruv_sharma_EE_2022UEE4653/static/js/453.dfcbff64.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2027f5bc.css",
+    "static/js/main.225661e2.js"
+  ]
+}
