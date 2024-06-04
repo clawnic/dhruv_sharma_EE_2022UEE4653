@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import WeatherWidget from './components/weather'
 
 function App() {
+  const [inVal,setinVal] = useState('London');
+  const [location,setlocation] = useState('London');
+
+  const handleSubmit = (e)=>{
+    e.preventDefault();
+    setlocation(inVal);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <form onSubmit={handleSubmit}>
+        <input type='text' value={inVal} onChange={(e)=>{
+          setinVal(e.target.value)
+        }}/>
+        <button type='submit'>update</button>
+      </form>
+      <WeatherWidget location={location}/>
+
     </div>
   );
 }

@@ -1,0 +1,92 @@
+.weather-widget{
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    border-radius: 35px;
+    padding: 20px;
+    /* background: linear-gradient(to bottom ,#0e1c26 , #2a454b,#294861);
+    color: wheat; */
+    box-shadow: 10px 8px 8px rgba(0,0,0,0.5);
+
+}
+
+.moon{
+    fill: white;
+    filter: drop-shadow(0 0 20px rgba(252,252,252,0.8));
+    width: 80px;
+    height: 80px;
+}
+.sun{
+    background-color: orange;
+    filter: drop-shadow(0 0 20px rgba(255,165,0,0.8));
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+@keyframes moveCloud {
+    0%,
+    100%{
+        transform: translateX(-65px) translateY(-105px) ;
+    }
+    50%{
+        transform: translateX(65px);
+    }
+}
+.cloud{
+    fill: rgb(76, 184, 246);
+    filter: drop-shadow(0 0 20px rgba(252,252,252,0.8));
+    width: 80px;
+    height: 80px;
+    animation: moveCloud 6s ease-in-out infinite;
+}
+.cloud-container{
+    position: absolute;
+    top: 90px;
+    left: 30%;
+
+    margin: 2px;
+    padding: 2px;
+}
+
+.info{
+    margin-top: 25%;
+   
+    
+}
+
+.temp{
+    font-size: 3rem;
+    font-weight: bold;
+    
+    
+}
+.location{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+}
+.location{
+    margin-top: 10%;
+}
+
+/* .location-pin{
+    position: absolute;
+    top:79%;
+    left: 10%;
+    fill: white;
+    width: 40px;
+    height: 40px;
+    
+} */
+
+.location-name{
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
