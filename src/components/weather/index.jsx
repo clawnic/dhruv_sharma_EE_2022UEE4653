@@ -8,6 +8,9 @@ import {ReactComponent as Cloud} from '../../assets/svgs/cloudie.svg'
 
 const WeatherWidget = ({location}) => {
   const [weatherData,setWeatherData]=useState(null);
+
+
+
   useEffect(
     ()=>{
       if(location.length){
@@ -24,13 +27,17 @@ const WeatherWidget = ({location}) => {
   if(!weatherData)return <div>Loading ...</div>;
   const currentTime = new Date().getTime()/1000;
   const localTZ = currentTime+ weatherData.timezone;
-  const isDay = localTZ >weatherData.sys.sunrise && localTZ < weatherData.sys.sunset;
+  const isDay = localTZ > weatherData.sys.sunrise && localTZ < weatherData.sys.sunset;
   const cloudSize = weatherData.clouds.all;
 
   const gradientColors = isDay
   ? 'linear-gradient(to bottom, #87CEEB, #FFFFE0)'
   : 'linear-gradient(to bottom, #0e1c26, #2a454b)';
   const fontColor = isDay ? 'black' : 'wheat';
+  console.log(isDay);
+
+
+
 
 
   
@@ -50,11 +57,12 @@ const WeatherWidget = ({location}) => {
         <div className='location'>
           {/* <Pin className='location-pin'/> */}
           <div className='location-name'>{weatherData.name}</div>
+
         </div>
         
         <div className='humidity'>Humidity: {weatherData.main.humidity}</div>
       </div>
- 
+
     </div>
   )
 }
