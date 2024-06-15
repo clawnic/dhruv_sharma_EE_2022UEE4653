@@ -7,5 +7,5 @@ deployed on gh pages: https://clawnic.github.io/dhruv_sharma_EE_2022UEE4653/
 
 ## 2) responsive web gallery
 deployed on another repository:
-code base: https://clawnic.github.io/dhruvSharma_EE_2022UEE4653/
+code base: https://github.com/clawnic/dhruvSharma_EE_2022UEE4653
 preview : https://clawnic.github.io/dhruvSharma_EE_2022UEE4653/
